@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Navigation Draw</string>
+    <string name="close_navigation">Close Navigation Draw…</string>
+    <string name="open_navigation">Open Navigation Draw…</string>
+</resources>

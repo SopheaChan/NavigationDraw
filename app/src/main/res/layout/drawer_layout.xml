@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <android.support.v4.widget.DrawerLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:id="@+id/drawerLayout"
+            tools:openDrawer="start"
+            android:layout_marginTop="?attr/actionBarSize">
+        <include layout="@layout/activity_main"/>
+        <android.support.design.widget.NavigationView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/navigation_view"
+                android:fitsSystemWindows="true"
+                android:layout_gravity="start"
+                app:headerLayout="@layout/navigation_header"
+                app:menu="@menu/navigation_menu"/>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
+
+        <!--In case you want the drawerLayout to display under the toolbar:
+            1. Go to style and remove the second style which was added
+            to display the drawerLayout header into status bar
+            2. Go to manifest and remove "android:theme="@style/AppTheme.NoActionBar""
+
+            3. In drawer_layout.xml file all the component/attribute have to be bounded
+            by a relative layout
+            4. Move the <include layout="@layout/activity_main"/> into relative layout scope
+            not under <android.support.v4.widget.DrawerLayout> scope anymore-->
+
+        <!--
+        To display a fit system window
+        android:fitsSystemWindows="true"
+        -->
+
+        <!--
+        To display drawerLayout into status bar
+        1. Uncomment the second style in value style.xml
+        2. Go to manifest you'll see what to do(only in this file, coz i'd commented the needed file there
+        3. Move toolbar_layout into activity_main.xml scope
+        4. And do the rest you think is necessary
+        -->
