@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">Navigation Draw</string>
+    <string name="app_name">វិជ្ជាធ្វើម្ហូប</string>
     <string name="close_navigation">Close Navigation Draw…</string>
     <string name="open_navigation">Open Navigation Draw…</string>
+    <string name="image_1">Image 1</string>
+    <string name="home">ទំព័រដើម</string>
+    <string name="new_recipe">មុខម្ហូបថ្មី</string>
+    <string name="about_us">អំពីយើងខ្ញុំ</string>
+    <string name="fragment_item_one">Fragment One</string>
+    <string name="fragment_item_two">Fragment Two</string>
+    <string name="fragment_item_three">Fragment Three</string>
+    <string name="show_text">Show Text</string>
 </resources>
